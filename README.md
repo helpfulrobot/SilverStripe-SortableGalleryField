@@ -1,8 +1,16 @@
 SilverStripe-SortableGalleryField
 =================================
 
-Bulk upload images into a silverstripe, drag and drop reordering. Choose files from desktop or images previously uploaded
+Bulk upload images into a silverstripe gallery, drag and drop reordering. Choose files from desktop or images previously uploaded
 
+
+FEATURES
+========
+
+bulk upload images
+add images from files previously uploaded
+responsive layout
+drag and drop ordering of images
 
 
 SAMPLE USAGE
