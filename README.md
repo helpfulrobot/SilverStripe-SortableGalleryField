@@ -9,7 +9,6 @@ FEATURES
 
 bulk upload images
 add images from files previously uploaded
-responsive layout
 drag and drop ordering of images
 
 
