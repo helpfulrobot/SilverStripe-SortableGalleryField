@@ -15,21 +15,19 @@ drag and drop ordering of images
 SAMPLE USAGE
 ============
 
-
-
-<?php
-class GalleryPage extends Page {
-	
-	static $has_many = array(  	 	
-		'Images' => 'Image'  
-	);
-	
-	function getCMSFields() {
-		$fields = parent::getCMSFields();
+	<?php
+	class GalleryPage extends Page {
 		
-		$f = new SortableGalleryField('Images', 'My Images'); 
-		$fields->addFieldToTab('Root.Images', $f);
+		static $has_many = array(  	 	
+			'Images' => 'Image'  
+		);
 		
-		return $fields;
+		function getCMSFields() {
+			$fields = parent::getCMSFields();
+			
+			$f = new SortableGalleryField('Images', 'My Images'); 
+			$fields->addFieldToTab('Root.Images', $f);
+			
+			return $fields;
+		}
 	}
-}
