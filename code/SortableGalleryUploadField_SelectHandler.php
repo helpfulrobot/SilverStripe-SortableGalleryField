@@ -1,10 +1,12 @@
 <?php
 
 
-class SortableGalleryUploadField_SelectHandler extends UploadField_SelectHandler{
+class SortableGalleryUploadField_SelectHandler extends UploadField_SelectHandler
+{
 
 
-    protected function getListField($folderID) {
+    protected function getListField($folderID)
+    {
         $field = parent::getListField($folderID);
         $fileField = $field->FieldList()->dataFieldByName('Files');
         $columns = $fileField->getConfig()->getComponentByType('GridFieldDataColumns');
@@ -16,5 +18,4 @@ class SortableGalleryUploadField_SelectHandler extends UploadField_SelectHandler
         ));
         return $field;
     }
-
 }
